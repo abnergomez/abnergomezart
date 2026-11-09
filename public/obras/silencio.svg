@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000" role="img" aria-label="Imagen provisional">
+<defs>
+<radialGradient id="bg" cx="32%" cy="35%" r="80%"><stop offset="0" stop-color="#e2dbcf"/><stop offset="1" stop-color="#191715" stop-opacity=".55"/></radialGradient>
+<radialGradient id="sk" cx="20%" cy="38%" r="70%"><stop offset="0" stop-color="#ffffff" stop-opacity=".85"/><stop offset=".45" stop-color="#e2dbcf" stop-opacity=".35"/><stop offset="1" stop-color="#191715" stop-opacity=".95"/></radialGradient>
+<linearGradient id="bd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#191715" stop-opacity=".85"/><stop offset="1" stop-color="#191715"/></linearGradient>
+<filter id="g" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="13"/><feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .22 0"/><feComposite in2="SourceGraphic" operator="in"/></filter>
+<filter id="soft"><feGaussianBlur stdDeviation="12.0"/></filter>
+</defs>
+<rect width="100%" height="100%" fill="#e2dbcf"/>
+<rect width="100%" height="100%" fill="url(#bg)"/>
+<path filter="url(#soft)" fill="url(#bd)" d="M40,1000 C60,757 320,664 449,612 L455,519 L585,519 L591,612 C720,664 980,757 1000,1000 Z"/>
+<ellipse filter="url(#soft)" cx="520" cy="400" rx="139" ry="184" fill="url(#sk)"/>
+<ellipse filter="url(#soft)" cx="435" cy="366" rx="51" ry="85" fill="#ffffff" opacity=".25"/>
+<rect width="100%" height="100%" filter="url(#g)"/>
+</svg>

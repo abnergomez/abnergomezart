@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "abnergomezart",
+  "compatibility_date": "2026-07-28",
+  // Genera el sitio estático (./out) antes de desplegar. NEXT_PUBLIC_SITE_URL
+  // queda fijo aquí para que todo build (local o CI) apunte al dominio real.
+  "build": {
+    "command": "NEXT_PUBLIC_SITE_URL=https://abnergomezart.com npm run build"
+  },
+  "assets": {
+    "directory": "./out",
+    "not_found_handling": "404-page"
+  }
+}
